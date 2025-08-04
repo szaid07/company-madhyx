@@ -10,6 +10,7 @@ import "rc-slider/assets/index.css";
 import { Unbounded, Poppins } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Context from "@/context/Context";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap.esm").then((module) => {
     // Module is imported, you can access any exported functionality if
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`body  ${poppins.variable} ${unbounded.variable}`}>
+        <SpeedInsights />
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
           <ScrollTop />
