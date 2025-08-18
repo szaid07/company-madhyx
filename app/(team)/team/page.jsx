@@ -1,6 +1,7 @@
 import MarqueeComponent from "@/components/common/Marquee";
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+import Header1 from "@/components/headers/Header1";
+
 import Breadcumb from "@/components/team/Breadcumb";
 import Contact from "@/components/team/Contact";
 
@@ -14,7 +15,7 @@ export const metadata = {
 export default function TeamPage() {
   return (
     <>
-      <Header3 />
+      <Header1 />
       <Breadcumb />
       <Team />
       <Contact />

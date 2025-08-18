@@ -1,9 +1,10 @@
 import BlogDetails from "@/components/blog/BlogDetails";
 import Breadcumb2 from "@/components/blog/Breadcumb2";
 import MarqueeComponent from "@/components/common/Marquee";
+import Header1 from "@/components/headers/Header1";
 
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+
 import { allBlogs } from "@/data/blogs";
 
 //For Static Side Genaration(SSG)
@@ -22,7 +23,7 @@ export default async function BlogPageDetails(props) {
   const params = await props.params;
   return (
     <>
-      <Header3 />
+      <Header1 />
       <Breadcumb2 />
       <BlogDetails blogId={params.id} />
       <MarqueeComponent />

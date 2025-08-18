@@ -2,9 +2,10 @@ import MarqueeComponent from "@/components/common/Marquee";
 import Breadcumb from "@/components/contact/Breadcumb";
 import Contact from "@/components/contact/Contact";
 import ContactInfo from "@/components/contact/ContactInfo";
+import Header1 from "@/components/headers/Header1";
 
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+
 import React from "react";
 
 export const metadata = {
@@ -14,7 +15,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <Header3 />
+      <Header1 />
       <Breadcumb />
       <ContactInfo />
       <Contact />

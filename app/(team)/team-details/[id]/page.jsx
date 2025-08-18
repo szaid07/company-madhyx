@@ -1,6 +1,7 @@
 import MarqueeComponent from "@/components/common/Marquee";
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+import Header1 from "@/components/headers/Header1";
+
 import Contact2 from "@/components/team/Contact2";
 
 import TeamDetails from "@/components/team/TeamDetails";
@@ -22,7 +23,7 @@ export default async function TeamPageDetails(props) {
   const params = await props.params;
   return (
     <>
-      <Header3 />
+      <Header1 />
       <TeamDetails teamId={params.id} />
       <Contact2 />
       <MarqueeComponent />

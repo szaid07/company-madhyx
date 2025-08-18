@@ -1,9 +1,10 @@
 import BlogList1 from "@/components/blog/BlogList1";
 import Breadcumb from "@/components/blog/Breadcumb";
 import MarqueeComponent from "@/components/common/Marquee";
+import Header1 from "@/components/headers/Header1";
 
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+
 import React from "react";
 
 export const metadata = {
@@ -12,7 +13,7 @@ export const metadata = {
 export default function BlogPage1() {
   return (
     <>
-      <Header3 />
+      <Header1 />
       <Breadcumb />
       <BlogList1 />
       <MarqueeComponent />

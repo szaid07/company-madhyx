@@ -1,6 +1,7 @@
 import MarqueeComponent from "@/components/common/Marquee";
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+import Header1 from "@/components/headers/Header1";
+
 import Breadcumb from "@/components/pricing/Breadcumb";
 import Faq from "@/components/pricing/Faq";
 
@@ -13,7 +14,7 @@ export const metadata = {
 export default function PricingPage() {
   return (
     <>
-      <Header3 />
+      <Header1 />
       <Breadcumb />
       <Pricing />
       <Faq />

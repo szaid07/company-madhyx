@@ -1,6 +1,7 @@
 import MarqueeComponent from "@/components/common/Marquee";
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+import Header1 from "@/components/headers/Header1";
+
 import Breadcumb2 from "@/components/portfolio/Breadcumb2";
 
 import ProjectDetails from "@/components/portfolio/ProjectDetails";
@@ -22,7 +23,7 @@ export default async function ProjectPageDetails(props) {
   const params = await props.params;
   return (
     <>
-      <Header3 />
+      <Header1 />
       <Breadcumb2 />
       <ProjectDetails portfolioId={params.id} />
       <MarqueeComponent />

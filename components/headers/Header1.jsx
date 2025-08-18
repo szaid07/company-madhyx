@@ -144,7 +144,7 @@ export default function Header1({ parentClass = "nav-header header-layout1" }) {
                 </div>
                 <div className="col-auto d-none d-lg-block">
                   <div className="header-button">
-                    <button
+                    {/* <button
                       type="button"
                       className="search-btn searchBoxToggler"
                       onClick={() =>
@@ -163,7 +163,7 @@ export default function Header1({ parentClass = "nav-header header-layout1" }) {
                         <span className="effect-1">SEARCH</span>
                         <span className="effect-1">SEARCH</span>
                       </span>
-                    </button>
+                    </button> */}
                     <button
                       type="button"
                       className="sidebar-btn sideMenuToggler"
