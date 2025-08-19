@@ -31,7 +31,7 @@ export default function SideMenu({ isOpen, setIsOpen }) {
                 <Image
                   width={86}
                   height={24}
-                  src="/assets/img/logo-white.svg"
+                  src="/assets/img/logo-white.png"
                   alt="Ovation"
                 />
               </Link>

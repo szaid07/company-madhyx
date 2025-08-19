@@ -76,7 +76,7 @@ export default function Header1({ parentClass = "nav-header header-layout1" }) {
               <Image
                 width={86}
                 height={24}
-                src="/assets/img/logo.svg"
+                src="/assets/img/logo.png"
                 alt="Ovation"
               />
             </Link>
@@ -118,7 +118,7 @@ export default function Header1({ parentClass = "nav-header header-layout1" }) {
                       <Image
                         width={86}
                         height={24}
-                        src="/assets/img/logo.svg"
+                        src="/assets/img/logo.png"
                         alt="logo"
                       />
                     </Link>

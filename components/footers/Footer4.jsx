@@ -15,7 +15,7 @@ export default function Footer4() {
                   <Image
                     width={86}
                     height={24}
-                    src="/assets/img/logo.svg"
+                    src="/assets/img/logo.png"
                     alt="logo"
                   />
                 </div>
