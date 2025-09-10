@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function Breadcumb() {
+export default function Breadcumb({ url = null }) {
+  const tempUrl = url || "/assets/img/bg/breadcumb-bg1-8.jpg";
   return (
     <div
       className="breadcumb-wrapper"
-      style={{ backgroundImage: "url(/assets/img/bg/breadcumb-bg1-8.jpg)" }}
+      style={{ backgroundImage: `url(${tempUrl})` }}
     >
       <div className="container">
         <div className="breadcumb-content">

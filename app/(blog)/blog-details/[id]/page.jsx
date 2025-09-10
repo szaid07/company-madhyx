@@ -3,7 +3,7 @@ import Breadcumb2 from "@/components/blog/Breadcumb2";
 import MarqueeComponent from "@/components/common/Marquee";
 import Header1 from "@/components/headers/Header1";
 
-import Footer8 from "@/components/footers/Footer8";
+import Footer1 from "@/components/footers/Footer1";
 
 import { allBlogs } from "@/data/blogs";
 
@@ -24,10 +24,10 @@ export default async function BlogPageDetails(props) {
   return (
     <>
       <Header1 />
-      <Breadcumb2 />
+      <Breadcumb2 blogId={params.id} />
       <BlogDetails blogId={params.id} />
       <MarqueeComponent />
-      <Footer8 />
+      <Footer1 />
     </>
   );
 }

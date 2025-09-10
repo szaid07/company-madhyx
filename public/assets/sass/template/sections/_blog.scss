@@ -189,7 +189,9 @@
 .blog__details-inner-thumb {
   position: relative;
   img {
-    width: 100%;
+    object-fit: cover;
+    width: 416px;
+    height: 380px;
   }
 }
 @media (max-width: 767.98px) {

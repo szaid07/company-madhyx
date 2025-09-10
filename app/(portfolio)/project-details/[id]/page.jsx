@@ -1,5 +1,5 @@
 import MarqueeComponent from "@/components/common/Marquee";
-import Footer8 from "@/components/footers/Footer8";
+import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 
 import Breadcumb2 from "@/components/portfolio/Breadcumb2";
@@ -27,7 +27,7 @@ export default async function ProjectPageDetails(props) {
       <Breadcumb2 />
       <ProjectDetails portfolioId={params.id} />
       <MarqueeComponent />
-      <Footer8 />
+      <Footer1 />
     </>
   );
 }

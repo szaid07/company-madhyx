@@ -55,9 +55,7 @@ export default function Footer1() {
             <div className="col-md-6 align-self-center text-lg-end">
               <p className="copyright-text">
                 Copyright © {new Date().getFullYear()}{" "}
-                <a href="https://themeforest.net/user/ib-themes/portfolio">
-                  ib-themes
-                </a>
+                <a href="javascript:;">Madhyx Technologies</a>
               </p>
             </div>
           </div>

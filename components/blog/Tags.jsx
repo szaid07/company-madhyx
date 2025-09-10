@@ -1,24 +1,14 @@
-const tags = [
-  { id: 1, text: "Agency" },
-  { id: 2, text: "Awards" },
-  { id: 3, text: "Marketing" },
-  { id: 4, text: "Brand" },
-  { id: 5, text: "Contemporary" },
-  { id: 6, text: "Design" },
-  { id: 7, text: "Education" },
-  { id: 8, text: "Business" },
-  { id: 9, text: "Modern" },
-];
-
-export default function Tags() {
+export default function Tags({ tags = [] }) {
+  const tagsList = [...tags];
+  if (tagsList.length === 0) return null;
   return (
     <div className="sidebar__widget">
       <h4 className="sidebar__widget-title">Tags</h4>
       <div className="sidebar__tag-list">
         <ul className="list-wrap">
-          {tags.map((category) => (
-            <li key={category.id}>
-              <a href="#">{category.text}</a>
+          {tagsList.map((tag) => (
+            <li key={tag.id}>
+              <a href="#">{tag.text}</a>
             </li>
           ))}
         </ul>

@@ -7,7 +7,7 @@ import Features from "@/components/about/Features";
 
 import Team from "@/components/about/Team";
 import MarqueeComponent from "@/components/common/Marquee";
-import Footer8 from "@/components/footers/Footer8";
+import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 
 import React from "react";
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <Contact />
       <Clients />
       <MarqueeComponent />
-      <Footer8 />
+      <Footer1 />
     </>
   );
 }

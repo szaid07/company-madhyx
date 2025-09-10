@@ -4,7 +4,7 @@ import Contact from "@/components/contact/Contact";
 import ContactInfo from "@/components/contact/ContactInfo";
 import Header1 from "@/components/headers/Header1";
 
-import Footer8 from "@/components/footers/Footer8";
+import Footer1 from "@/components/footers/Footer1";
 
 import React from "react";
 
@@ -20,7 +20,7 @@ export default function ContactPage() {
       <ContactInfo />
       <Contact />
       <MarqueeComponent />
-      <Footer8 />
+      <Footer1 />
     </>
   );
 }

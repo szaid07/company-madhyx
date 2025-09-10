@@ -3,21 +3,21 @@ import Breadcumb from "@/components/blog/Breadcumb";
 import MarqueeComponent from "@/components/common/Marquee";
 import Header1 from "@/components/headers/Header1";
 
-import Footer8 from "@/components/footers/Footer8";
+import Footer1 from "@/components/footers/Footer1";
 
 import React from "react";
 
 export const metadata = {
-  title: "Blog 1 || Frisk - Creative Agency & Portfolio Nextjs Template",
+  title: "Blogs || Madhyx Tech",
 };
 export default function BlogPage1() {
   return (
     <>
       <Header1 />
-      <Breadcumb />
+      <Breadcumb url="/assets/img/blog/blog.png" />
       <BlogList1 />
       <MarqueeComponent />
-      <Footer8 />
+      <Footer1 />
     </>
   );
 }

@@ -74,9 +74,9 @@ export default function BlogList2() {
             <div className="col-30">
               <aside className="blog__sidebar">
                 <BlogSerchbar />
-                <Categories />
+                {/* <Categories /> */}
                 <RecentPosts />
-                <Tags />
+                {/* <Tags /> */}
               </aside>
             </div>
           </div>

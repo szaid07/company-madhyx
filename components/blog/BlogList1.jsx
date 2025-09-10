@@ -1,14 +1,23 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import BlogSerchbar from "./BlogSerchbar";
-import Categories from "./Categories";
 import RecentPosts from "./RecentPosts";
-import Tags from "./Tags";
-import { blogs3 } from "@/data/blogs";
+import { allBlogs } from "@/data/blogs";
 import Link from "next/link";
 import Pagination from "./Pagination";
 import Image from "next/image";
 
 export default function BlogList1() {
+  const [currentPage, setCurrentPage] = useState(0);
+  const [blogs, setBlogs] = useState(allBlogs.slice(0, 5));
+
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+    const startIndex = newPage * 5;
+    const endIndex = startIndex + 5;
+    setBlogs(allBlogs.slice(startIndex, endIndex));
+  };
+
   return (
     <section className="blog__area space">
       <div className="container">
@@ -17,7 +26,7 @@ export default function BlogList1() {
             <div className="col-70">
               <div className="blog-post-wrap">
                 <div className="row gy-50 gutter-24">
-                  {blogs3.slice(0, 4).map((elm, i) => (
+                  {blogs.map((elm, i) => (
                     <div key={i} className="col-md-12">
                       <div className="blog-post-item">
                         <div className="blog-post-thumb">
@@ -68,15 +77,18 @@ export default function BlogList1() {
                     </div>
                   ))}
                 </div>
-                <Pagination />
+                <Pagination
+                  onPageChange={handlePageChange}
+                  currentPage={currentPage}
+                />
               </div>
             </div>
             <div className="col-30">
               <aside className="blog__sidebar">
                 <BlogSerchbar />
-                <Categories />
+                {/* <Categories /> */}
                 <RecentPosts />
-                <Tags />
+                {/* <Tags /> */}
               </aside>
             </div>
           </div>

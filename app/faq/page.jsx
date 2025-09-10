@@ -4,7 +4,7 @@ import ContactInfo from "@/components/faq/ContactInfo";
 import Faq from "@/components/faq/Faq";
 import Header1 from "@/components/headers/Header1";
 
-import Footer8 from "@/components/footers/Footer8";
+import Footer1 from "@/components/footers/Footer1";
 
 import React from "react";
 
@@ -19,7 +19,7 @@ export default function FaqPage() {
       <Faq />
       <ContactInfo />
       <MarqueeComponent />
-      <Footer8 />
+      <Footer1 />
     </>
   );
 }

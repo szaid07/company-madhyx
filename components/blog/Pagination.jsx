@@ -1,58 +1,70 @@
 "use client";
-import { useState } from "react";
 
-export default function Pagination() {
-  const [currentPage, setCurrentPage] = useState(1);
+import { allBlogs } from "@/data/blogs";
+
+export default function Pagination({ onPageChange, currentPage }) {
+  const totalPages = Math.ceil(allBlogs.length / 5);
 
   const handlePageChange = (newPage) => {
-    setCurrentPage(newPage);
+    currentPage = newPage;
+    onPageChange(newPage);
+    window.scrollTo(0, 0);
   };
 
-  const handlePrevPage = () => {
-    if (currentPage > 1) {
+  const handlePrevPage = (currentPage) => {
+    if (currentPage > 0) {
       handlePageChange(currentPage - 1);
     }
   };
 
-  const handleNextPage = () => {
-    // Assuming you have a total number of pages (e.g., totalPages) in your data
-
-    handlePageChange(currentPage + 1);
+  const handleNextPage = (currentPage) => {
+    if (currentPage < totalPages) {
+      handlePageChange(currentPage + 1);
+    }
   };
 
   return (
     <div className="pagination-wrap mt-50">
       <nav aria-label="Page navigation example">
         <ul className="pagination list-wrap">
-          <li className="page-item next-page" onClick={handlePrevPage}>
-            <div style={{ cursor: "pointer" }} className="page-link">
-              <i className="fas fa-arrow-left"></i>
-            </div>
-          </li>
-          {/* Assuming you have a fixed number of pages, you can adjust this dynamically based on your data */}
-          {[1, 2, 3, 4].map((page) => (
+          {currentPage > 0 && (
             <li
-              key={page}
-              className={`page-item ${currentPage === page ? "active" : ""}`}
-              onClick={() => handlePageChange(page)}
+              className="page-item next-page"
+              onClick={() => handlePrevPage(currentPage)}
             >
               <div style={{ cursor: "pointer" }} className="page-link">
-                {page}
+                <i className="fas fa-arrow-left"></i>
+              </div>
+            </li>
+          )}
+          {[...Array(totalPages)].map((_, index) => (
+            <li
+              key={index}
+              className={`page-item ${currentPage === index ? "active" : ""}`}
+              onClick={() => handlePageChange(index)}
+            >
+              <div style={{ cursor: "pointer" }} className="page-link">
+                {index + 1}
               </div>
             </li>
           ))}
-          {currentPage > 4 && (
+          {currentPage > totalPages - 1 && (
             <li className={`page-item active`}>
               <div style={{ cursor: "pointer" }} className="page-link">
                 {currentPage}
               </div>
             </li>
           )}
-          <li className="page-item next-page" onClick={handleNextPage}>
-            <div style={{ cursor: "pointer" }} className="page-link">
-              <i className="fas fa-arrow-right"></i>
-            </div>
-          </li>
+          {currentPage < totalPages - 1 && (
+            <li
+              className="page-item next-page"
+              onClick={() => handleNextPage(currentPage)}
+            >
+              <div style={{ cursor: "pointer" }} className="page-link">
+                <i className="fas fa-arrow-right"></i>
+              </div>
+            </li>
+          )}
         </ul>
       </nav>
     </div>
