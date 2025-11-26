@@ -19,6 +19,11 @@ export const menuItems = [
     //   { label: "Fullscreen Slideshow", link: "/home-12" },
     // ],
   },
+  {
+    id: 2,
+    title: "SERVICES",
+    link: "/service",
+  },
   // {
   //   id: 2,
   //   title: "PAGES",
@@ -84,6 +89,6 @@ export const menuItems = [
   {
     id: 5,
     title: "CONTACT",
-    link: "/contact",
+    link: "/about",
   },
 ];

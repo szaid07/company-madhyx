@@ -1,7 +1,7 @@
 import Awards from "@/components/about/Awards";
 import Breadcumb from "@/components/about/Breadcumb";
 import Clients from "@/components/about/Clients";
-import Contact from "@/components/about/Contact";
+import ContactForm from "@/components/about/Contact";
 import Facts from "@/components/about/Facts";
 import Features from "@/components/about/Features";
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
       <Features />
       {/* <Awards /> */}
       {/* <Team /> */}
-      <Contact />
+      <ContactForm />
       <Clients />
       <MarqueeComponent />
       <Footer1 />

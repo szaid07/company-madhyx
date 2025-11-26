@@ -1,8 +1,8 @@
 export const links = [
   { id: 1, href: "/about", text: "ABOUT COMPANY" },
-  { id: 2, href: "/project", text: "OUR CAREERS" },
+  // { id: 2, href: "/project", text: "OUR CAREERS" },
   { id: 3, href: "/service", text: "SERVICES" },
-  { id: 4, href: "/contact", text: "CONTACT" },
+  // { id: 4, href: "/contact", text: "CONTACT" },
 ];
 export const links2 = [
   { id: 5, href: "/privacy-policy", text: "PRIVACY POLICY" },

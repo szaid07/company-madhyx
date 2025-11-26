@@ -1,4 +1,5 @@
 "use client";
+import ContactForm from "@/components/about/Contact";
 
 export default function Contact() {
   return (
@@ -26,7 +27,7 @@ export default function Contact() {
                   something
                 </p>
               </div>
-              <form
+              {/* <form
                 onSubmit={(e) => e.preventDefault()}
                 className="contact-form ajax-contact"
               >
@@ -87,7 +88,8 @@ export default function Contact() {
                     </span>
                   </button>
                 </div>
-              </form>
+              </form> */}
+              <ContactForm />
             </div>
           </div>
         </div>

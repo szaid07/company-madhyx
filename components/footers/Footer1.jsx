@@ -1,13 +1,15 @@
 import React from "react";
-import Socials from "./component/Socials";
+
 import Link from "next/link";
+
 import FooterLinks1 from "./component/FooterLinks1";
 import FooterLinks2 from "./component/FooterLinks2";
+import Socials from "./component/Socials";
 
 export default function Footer1() {
   return (
     <footer className="footer-wrapper footer-layout1 overflow-hidden bg-smoke">
-      <div className="container">
+      {/* <div className="container">
         <div className="footer-top space">
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-6">
@@ -37,13 +39,13 @@ export default function Footer1() {
               </ul>
             </div>
             <div className="col-xxl-6 col-lg-5 text-lg-end">
-              <ul className="footer-menu-list">
+              {/* <ul className="footer-menu-list">
                 <FooterLinks2 />
-              </ul>
+              </ul> 
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="copyright-wrap">
         <div className="container">
           <div className="row gy-3 justify-content-between align-items-center">

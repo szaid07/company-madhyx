@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import ReCAPTCHA from "react-google-recaptcha";
 
-export default function Contact() {
+export default function ContactForm() {
   const [captchaToken, setCaptchaToken] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState("");

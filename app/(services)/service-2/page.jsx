@@ -1,9 +1,9 @@
+import ContactForm from "@/components/about/Contact";
 import MarqueeComponent from "@/components/common/Marquee";
 import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 
 import Breadcumb from "@/components/service/Breadcumb";
-import Contact from "@/components/service/Contact";
 import Features2 from "@/components/service/Features2";
 
 export const metadata = {
@@ -18,7 +18,7 @@ export default function ServicePage2() {
       <Header1 />
       <Breadcumb />
       <Features2 />
-      <Contact />
+      <ContactForm />
       <MarqueeComponent />
       <Footer1 />
     </>
