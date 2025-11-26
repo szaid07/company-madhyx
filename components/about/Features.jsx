@@ -32,7 +32,7 @@ export default function Features() {
             </p>
             <h4 className="mt-35">Why Work With Us</h4>
             <p className="mb-n1">
-              If you ask our clients what it’s like working with 36, they’ll
+              If you ask our clients what it’s like working with Madhyx, they’ll
               talk about how much we care about their success. For us, real
               relationships fuel real success. We love building brands
             </p>

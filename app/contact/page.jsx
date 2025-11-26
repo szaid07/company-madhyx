@@ -9,7 +9,15 @@ import Footer1 from "@/components/footers/Footer1";
 import React from "react";
 
 export const metadata = {
-  title: "Contact || Frisk - Creative Agency & Portfolio Nextjs Template",
+  title: "Contact || Madhyx - Creative Agency",
+  description: "Contact || Madhyx - Creative Agency",
+  keywords: "Contact || Madhyx - Creative Agency",
+  author: "Madhyx",
+  robots: "index, follow",
+  canonical: "https://madhyx.com/contact",
+  openGraph: {
+    title: "Contact || Madhyx - Creative Agency",
+  },
 };
 
 export default function ContactPage() {

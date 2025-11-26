@@ -21,10 +21,10 @@ export default function AboutPage() {
     <>
       <Header1 />
       <Breadcumb />
-      <Facts />
+      {/* <Facts /> */}
       <Features />
-      <Awards />
-      <Team />
+      {/* <Awards /> */}
+      {/* <Team /> */}
       <Contact />
       <Clients />
       <MarqueeComponent />

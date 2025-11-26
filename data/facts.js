@@ -1,7 +1,7 @@
 export const counterData = [
   {
     id: 1,
-    number: 26,
+    number: 9,
     title: "Years of Experience",
     text: "We are a creative agency brands building insightful strategy, creating unique designs helping",
   },
