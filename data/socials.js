@@ -10,5 +10,9 @@ export const socialMediaLinks = [
     href: "https://x.com/madhyx_tech?s=21",
     iconClass: "fab fa-twitter",
   },
-  { id: 4, href: "https://dribbble.com/", iconClass: "fab fa-dribbble" },
+  {
+    id: 4,
+    href: "https://www.linkedin.com/company/madhyx-technologies",
+    iconClass: "fab fa-linkedin",
+  },
 ];
