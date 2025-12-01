@@ -11,6 +11,8 @@ import { Unbounded, Poppins } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Context from "@/context/Context";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
+
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap.esm").then((module) => {
     // Module is imported, you can access any exported functionality if
@@ -51,7 +53,10 @@ export default function RootLayout({ children }) {
       <body className={`body  ${poppins.variable} ${unbounded.variable}`}>
         <SpeedInsights />
         <Context>
-          <ParallaxProvider>{children}</ParallaxProvider>
+          <ParallaxProvider>
+            {children}
+            <Analytics />
+          </ParallaxProvider>
           <ScrollTop />
           <ScrollTopBehaviour />
         </Context>
