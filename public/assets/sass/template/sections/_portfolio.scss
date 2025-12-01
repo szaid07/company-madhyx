@@ -6,6 +6,8 @@
 .portfolio-wrap {
   position: relative;
   display: block;
+  border-left: 5px solid;
+  padding-left: 15px;
   .portfolio-thumb {
     display: inline-block;
     overflow: hidden;
@@ -26,7 +28,7 @@
         font-weight: 400;
         position: relative;
         &:after {
-          content: "/";
+          content: "-";
           position: relative;
           margin: 0 2px;
         }

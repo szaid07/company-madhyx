@@ -7,10 +7,7 @@ import Slider from "react-slick";
 export default function ProjectDetails({ portfolioId }) {
   const portfolioItem =
     allPortfolio.filter((elm) => elm.id == portfolioId)[0] || allPortfolio[1];
-  const itemsImages = [
-    "/assets/img/portfolio/portfolio_inner_1.png",
-    "/assets/img/portfolio/portfolio_inner_2.png",
-  ];
+  const itemsImages = portfolioItem.projectImages;
   const slideroptions = {
     arrows: true,
     autoplay: true,
@@ -50,19 +47,26 @@ export default function ProjectDetails({ portfolioId }) {
             <div className="project-details-info mb-lg-0 mb-40">
               <ul className="list-wrap">
                 <li>
-                  <span>Category:</span>Development
+                  <span>Category:</span>
+                  {portfolioItem.categoryLinks.map((elm2, i2) => (
+                    <span key={i2}>{elm2}</span>
+                  ))}
                 </li>
                 <li>
-                  <span>Software:</span>WordPress, Figma
+                  <span>Software:</span>
+                  {portfolioItem.software}
                 </li>
                 <li>
-                  <span>Service:</span>Development
+                  <span>Service:</span>
+                  {portfolioItem.service}
                 </li>
                 <li>
-                  <span>Client:</span>Eunice Mills
+                  <span>Client:</span>
+                  {portfolioItem.client}
                 </li>
                 <li>
-                  <span>Date:</span>October 6, 2023
+                  <span>Date:</span>
+                  {portfolioItem.date}
                 </li>
               </ul>
             </div>
@@ -71,35 +75,18 @@ export default function ProjectDetails({ portfolioId }) {
             <div className="title-area mb-35">
               <h2 className="sec-title">{portfolioItem.title}</h2>
               <p className="sec-text mt-30">
-                BaseCreate is pleased to announce that it has been commissioned
-                by Leighton Asia reposition its brand. We will help Leighton
-                Asia evolve its brand strategy, and will be responsible updating
-                Leighton Asia’s brand identity, website, and other collaterals.
+                {portfolioItem.projectDescription_1}
               </p>
               <p className="sec-text mt-30">
-                For almost 50 years Leighton Asia, one of the region’s largest
-                and most respected construction companies, has been
-                progressively building for a better future by leveraging
-                international expertise with local intelligence. In that time
-                Leighton has delivered some of Asia’s prestigious buildings and
-                transformational infrastructure projects.
+                {portfolioItem.projectDescription_2}
               </p>
             </div>
             <h3>Challenge & Solution</h3>
             <p className="sec-text mb-n1">
-              Future, as it seeks to lead the industry in technological
-              innovation and sustainable building practices to deliver
-              long-lasting value for its clients.
+              {portfolioItem.challenges_solution}
             </p>
             <h3 className="mt-35">Final Result</h3>
-            <p className="sec-text mb-n1">
-              For almost 50 years Leighton Asia, one of the region’s largest and
-              most respected construction companies, has been progressively
-              building for a better future by leveraging international expertise
-              with local intelligence. In that time Leighton has delivered some
-              of Asia’s prestigious buildings and transformational
-              infrastructure projects.
-            </p>
+            <p className="sec-text mb-n1">{portfolioItem.final_result}</p>
           </div>
           <div className="col-lg-12">
             <div className="inner__page-nav space-top mt-n1 mb-n1">

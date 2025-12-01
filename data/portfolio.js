@@ -1,345 +1,148 @@
 export const portfolioData = [
   {
     id: 1,
-    imageSrc: "/assets/img/portfolio/portfolio1_1.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Money Laundering Compliance Scanner",
-    title: "Decentralized Platform",
+    imageSrc: "/assets/img/portfolio/portfolio1_1.png",
+    categoryLinks: ["Mobile App UI", "Development", "Marketing"],
+    projectTitle: "Fintech Mobile App UI",
+    title: "Fintech Mobile App UI",
+    projectImages: [
+      "/assets/img/portfolio/portfolio1_1.png",
+      "/assets/img/portfolio/portfolio1_2.png",
+      "/assets/img/portfolio/portfolio1_3.png",
+    ],
+    software: "React Native, Expo, Figma",
+    service: "UI/UX Design, Development",
+    client: "Ayesha Digital Solutions",
+    date: "March 12, 2024",
+    projectDescription_1:
+      "A modern and intuitive fintech mobile application designed to help users track expenses, manage digital payments, and analyze financial trends.",
+    projectDescription_2:
+      "The UI is crafted with a clean design system focused on accessibility, responsive layouts, and engaging micro-interactions utilizing React Native and Figma.",
+    challenges_solution:
+      "The challenge was creating a secure yet seamless financial interaction flow. We solved this by designing simplified navigation, biometric login screens, and optimized API integration for faster data sync.",
+    final_result:
+      "Delivered a polished mobile application UI with smooth user experience, resulting in increased client engagement and a 35% improvement in user retention.",
   },
   {
     id: 2,
-    imageSrc: "/assets/img/portfolio/portfolio1_2.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Decentralized Lending Platform for Students",
-    title: "App for Business",
+    imageSrc: "/assets/img/portfolio/portfolio2_1.jpg",
+    categoryLinks: ["Website", "Development", "Marketing", "UI/UX Design"],
+    projectTitle: "Monet Construction Website",
+    title: "Monet Construction Website",
+    projectImages: [
+      "/assets/img/portfolio/portfolio2_1.jpg",
+      "/assets/img/portfolio/portfolio2_2.jpg",
+      "/assets/img/portfolio/portfolio2_3.jpg",
+    ],
+    software: "WordPress, Figma",
+    service: "UI/UX Design, Development",
+    client: "Monet Builders Pvt Ltd",
+    date: "January 28, 2024",
+    projectDescription_1:
+      "A professionally designed construction company website focusing on showcasing services, past projects, and customer testimonials.",
+    projectDescription_2:
+      "The project features a fully responsive layout, SEO-optimized pages, and a visually appealing portfolio section.",
+    challenges_solution:
+      "The main challenge was balancing visual aesthetics with corporate professionalism. We solved this by using a structured grid layout and minimalistic typography.",
+    final_result:
+      "Successfully delivered a fast-loading, mobile-friendly website that helped the client increase online inquiries by 42% within 2 months.",
   },
   {
     id: 3,
-    imageSrc: "/assets/img/portfolio/portfolio1_3.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Anti Money Laundering Compliance Scanner",
-    title: "Website Development",
+    imageSrc: "/assets/img/portfolio/portfolio3_1.png",
+    categoryLinks: ["Website", "UI/UX Design", "Hosting"],
+    projectTitle: "BlueBerry - Fresh Farm Products",
+    title: "BlueBerry - Fresh Farm Products",
+    projectImages: [
+      "/assets/img/portfolio/portfolio3_1.png",
+      "/assets/img/portfolio/portfolio3_2.png",
+      "/assets/img/portfolio/portfolio3_3.png",
+    ],
+    software: "React JS, Figma",
+    service: "UI/UX Design, Development",
+    client: "BlueBerry Organic Farms",
+    date: "April 15, 2024",
+    projectDescription_1:
+      "An ecommerce platform designed for a farm-to-table organic products company, enabling customers to browse and order farm-fresh produce.",
+    projectDescription_2:
+      "The UI focuses on clean visuals, organic-inspired colors, and an easy checkout experience.",
+    challenges_solution:
+      "Managing product images and ensuring smooth performance with high-resolution assets was challenging. Implemented optimized lazy-loading and CDN support.",
+    final_result:
+      "The final product resulted in a 50% increase in online sales and improved the client's brand trust with modern UI/UX.",
   },
   {
     id: 4,
-    imageSrc: "/assets/img/portfolio/portfolio1_4.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Shopify Redesign for a Nova Scotia Winery",
-    title: "Nova Scotia Winery",
+    imageSrc: "/assets/img/portfolio/portfolio4_1.png",
+    categoryLinks: ["Website", "Development", "UI/UX Design"],
+    projectTitle: "Forex Trading Platform",
+    title: "Forex Trading Platform",
+    projectImages: [
+      "/assets/img/portfolio/portfolio4_1.png",
+      "/assets/img/portfolio/portfolio4_2.png",
+      "/assets/img/portfolio/portfolio4_3.png",
+    ],
+    software: "React JS, Figma",
+    service: "UI/UX Design, Development",
+    client: "FXPro Traders Hub",
+    date: "February 5, 2024",
+    projectDescription_1:
+      "A professional trading dashboard for forex investors, featuring real-time charts, trading history, and automated strategies.",
+    projectDescription_2:
+      "Designed with dark-theme UI, modular components, and lightning-fast performance.",
+    challenges_solution:
+      "Ensuring real-time updates without performance drops was the biggest challenge. We achieved this using optimized WebSocket integration.",
+    final_result:
+      "Delivered a robust, high-performance platform praised by traders for its clean UI and reliability.",
   },
   {
     id: 5,
-    imageSrc: "/assets/img/portfolio/portfolio1_5.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Trading Website Design & Development",
-    title: "Educational Platform",
+    imageSrc: "/assets/img/portfolio/portfolio5_1.png",
+    categoryLinks: ["Website", "Development", "UI/UX Design"],
+    projectTitle: "Multipurpose Admin Dashboard",
+    title: "Multipurpose Admin Dashboard",
+    projectImages: [
+      "/assets/img/portfolio/portfolio5_1.png",
+      "/assets/img/portfolio/portfolio5_2.png",
+      "/assets/img/portfolio/portfolio5_3.png",
+    ],
+    software: "Angular 17+, Figma",
+    service: "UI/UX Design, Development",
+    client: "BrightView Technologies",
+    date: "May 20, 2024",
+    projectDescription_1:
+      "A fully customizable admin dashboard built for enterprise analytics, team management, and system monitoring.",
+    projectDescription_2:
+      "The UI incorporates modular components, graphs, charts, and theme customization using Angular 17+.",
+    challenges_solution:
+      "The challenge was creating components flexible enough for multiple industries. We created a dynamic component system with adaptive layouts.",
+    final_result:
+      "The dashboard improved client productivity by 30% with simplified workflows and faster data insights.",
   },
   {
     id: 6,
-    imageSrc: "/assets/img/portfolio/portfolio1_6.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle:
-      "Shopify Redesign for a Nova Scotia WineryProduct Lineup Industrial Design for Caramba",
-    title: "Educational Platform",
+    imageSrc: "/assets/img/portfolio/portfolio6_1.png",
+    categoryLinks: ["Website", "Development", "UI/UX Design"],
+    projectTitle: "Hosting Services Website",
+    title: "Hosting Services Website",
+    projectImages: [
+      "/assets/img/portfolio/portfolio6_1.png",
+      "/assets/img/portfolio/portfolio6_2.png",
+      "/assets/img/portfolio/portfolio6_3.png",
+    ],
+    software: "Next JS, Figma",
+    service: "UI/UX Design, Development",
+    client: "PrimeHost Cloud Services",
+    date: "June 9, 2024",
+    projectDescription_1:
+      "A high-performance hosting provider website featuring pricing plans, server specs, and customer support modules.",
+    projectDescription_2:
+      "Built with SEO-optimized Next.js pages, modern animations, and a clean white-blue theme.",
+    challenges_solution:
+      "The toughest part was maintaining SEO performance with animation-heavy content. We solved this using Next.js server-side rendering and script optimization.",
+    final_result:
+      "The website launched with excellent performance scores (95+ Lighthouse) and improved client sign-ups by 27% within the first month.",
   },
 ];
 
-export const portfolioData2 = [
-  {
-    id: 7,
-    imageSrc: "/assets/img/portfolio/portfolio2_1.jpg",
-    category: "Branding",
-    title: "Decentralized Platform",
-  },
-  {
-    id: 8,
-    imageSrc: "/assets/img/portfolio/portfolio2_2.jpg",
-    category: "Branding",
-    title: "Decentralized Platform",
-  },
-  {
-    id: 9,
-    imageSrc: "/assets/img/portfolio/portfolio2_3.jpg",
-    category: "Branding",
-    title: "Decentralized Platform",
-  },
-  {
-    id: 10,
-    imageSrc: "/assets/img/portfolio/portfolio2_1.jpg",
-    category: "Branding",
-    title: "Decentralized Platform",
-  },
-  {
-    id: 11,
-    imageSrc: "/assets/img/portfolio/portfolio2_2.jpg",
-    category: "Branding",
-    title: "Decentralized Platform",
-  },
-  {
-    id: 12,
-    imageSrc: "/assets/img/portfolio/portfolio2_3.jpg",
-    category: "Branding",
-    title: "Decentralized Platform",
-  },
-];
-
-export const portfolioData3 = [
-  {
-    id: 13,
-    year: "2017",
-    img: "/assets/img/award/award-1-1.png",
-    title: "Decentralized Platform",
-    categories: ["Branding", "Development", "Marketing"],
-    tag: "Webflow",
-  },
-  {
-    id: 14,
-    year: "2019",
-    img: "/assets/img/award/award-1-2.png",
-    title: "App for Business",
-    categories: ["Development", "Marketing"],
-    tag: "Themeforest",
-  },
-  {
-    id: 15,
-    year: "2019",
-    img: "/assets/img/award/award-1-3.png",
-    title: "Website Development",
-    categories: ["Branding", "Development"],
-    tag: "Framer",
-  },
-  {
-    id: 16,
-    year: "2022",
-    img: "/assets/img/award/award-1-4.png",
-    title: "Nova Scotia Winery",
-    categories: ["Branding", "Development", "Marketing"],
-    tag: "Template monster",
-  },
-  {
-    id: 17,
-    year: "2023",
-    img: "/assets/img/award/award-1-5.png",
-    title: "Educational Platform",
-    categories: ["Marketing", "Branding"],
-    tag: "Themeforest",
-  },
-];
-
-export const portfolioData4 = [
-  {
-    id: 18,
-    imageUrl: "/assets/img/portfolio/portfolio3_1.jpg",
-    category: "Branding",
-    title: "Decentralized Platform",
-    parentClass: "col-lg-7",
-  },
-  {
-    id: 19,
-    imageUrl: "/assets/img/portfolio/portfolio3_2.jpg",
-    category: "Branding",
-    title: "Laundering Compliance",
-    parentClass: "col-lg-5",
-  },
-  {
-    id: 20,
-    imageUrl: "/assets/img/portfolio/portfolio3_3.jpg",
-    category: "Branding",
-    title: "Anti Money Laundering",
-    parentClass: "col-lg-12",
-  },
-  {
-    id: 21,
-    imageUrl: "/assets/img/portfolio/portfolio3_4.png",
-    category: "Branding",
-    title: "Anti Money Laundering",
-    parentClass: "col-lg-5",
-  },
-  {
-    id: 22,
-    imageUrl: "/assets/img/portfolio/portfolio3_5.png",
-    category: "Branding",
-    title: "Anti Money Laundering",
-    parentClass: "col-lg-7",
-  },
-  {
-    id: 23,
-    imageUrl: "/assets/img/portfolio/portfolio3_6.png",
-    category: "Branding",
-    title: "Anti Money Laundering",
-    parentClass: "col-lg-12",
-  },
-];
-
-export const projects = [
-  {
-    id: 24,
-    title: "Decentralized Platform",
-    imageSrc: "/assets/img/portfolio/portfolio4_1.png",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-  {
-    id: 25,
-    title: "App for Business",
-    imageSrc: "/assets/img/portfolio/portfolio4_2.png",
-    categories: ["Development", "Marketing"],
-  },
-  {
-    id: 26,
-    title: "Educational Platform",
-    imageSrc: "/assets/img/portfolio/portfolio4_3.png",
-    categories: ["Marketing", "Branding"],
-  },
-  {
-    id: 27,
-    title: "Nova Scotia Winery",
-    imageSrc: "/assets/img/portfolio/portfolio4_4.png",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-];
-export const projects2 = [
-  {
-    id: 28,
-    title: "Decentralized Platform",
-    imageSrc: "/assets/img/portfolio/portfolio5_1.jpg",
-
-    categories: ["Branding", "Development", "Marketing"],
-  },
-  {
-    id: 29,
-    title: "App for Business",
-    imageSrc: "/assets/img/portfolio/portfolio5_2.jpg",
-    categories: ["Development", "Marketing"],
-  },
-  {
-    id: 30,
-    title: "Educational Platform",
-    imageSrc: "/assets/img/portfolio/portfolio5_3.jpg",
-    categories: ["Marketing", "Branding"],
-  },
-  {
-    id: 31,
-    title: "Nova Scotia Winery",
-    imageSrc: "/assets/img/portfolio/portfolio5_4.jpg",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-];
-export const portfolioData5 = [
-  {
-    id: 32,
-    imageSrc: "/assets/img/portfolio/portfolio4_1.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Money Laundering Compliance Scanner",
-    title: "Decentralized Platform",
-  },
-  {
-    id: 33,
-    imageSrc: "/assets/img/portfolio/portfolio4_2.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Decentralized Lending Platform for Students",
-    title: "App for Business",
-  },
-  {
-    id: 34,
-    imageSrc: "/assets/img/portfolio/portfolio4_3.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Anti Money Laundering Compliance Scanner",
-    title: "Website Development",
-  },
-  {
-    id: 35,
-    imageSrc: "/assets/img/portfolio/portfolio4_4.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Shopify Redesign for a Nova Scotia Winery",
-    title: "Nova Scotia Winery",
-  },
-  {
-    id: 36,
-    imageSrc: "/assets/img/portfolio/portfolio4_5.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Trading Website Design & Development",
-    title: "Educational Platform",
-  },
-  {
-    id: 37,
-    imageSrc: "/assets/img/portfolio/portfolio4_6.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle:
-      "Shopify Redesign for a Nova Scotia WineryProduct Lineup Industrial Design for Caramba",
-    title: "Educational Platform",
-  },
-];
-
-export const portfolioItems = [
-  {
-    id: 38,
-    title: "Decentralized Platform",
-    imgSrc: "/assets/img/portfolio/portfolio4_1.png",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-  {
-    id: 39,
-    title: "App for Business",
-    imgSrc: "/assets/img/portfolio/portfolio4_2.png",
-    categories: ["Development", "Marketing"],
-  },
-  {
-    id: 40,
-    title: "Educational Platform",
-    imgSrc: "/assets/img/portfolio/portfolio4_3.png",
-    categories: ["Development", "Marketing"],
-  },
-  {
-    id: 41,
-    title: "Nova Scotia Winery",
-    imgSrc: "/assets/img/portfolio/portfolio4_4.png",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-  {
-    id: 42,
-    title: "Caramba Product",
-    imgSrc: "/assets/img/portfolio/portfolio4_5.png",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-  {
-    id: 43,
-    title: "Trading Website Design",
-    imgSrc: "/assets/img/portfolio/portfolio4_6.png",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-  {
-    id: 44,
-    title: "Ticket Booking App",
-    imgSrc: "/assets/img/portfolio/portfolio4_7.png",
-    categories: ["Branding", "Marketing"],
-  },
-  {
-    id: 45,
-    title: "Fund Management",
-    imgSrc: "/assets/img/portfolio/portfolio4_8.png",
-    categories: ["Branding", "Development", "Marketing"],
-  },
-  {
-    id: 46,
-    title: "Quartier Petit Champlain",
-    imgSrc: "/assets/img/portfolio/portfolio4_9.png",
-    categories: ["Development", "Marketing"],
-  },
-  {
-    id: 47,
-    title: "Intelligent Dashboard",
-    imgSrc: "/assets/img/portfolio/portfolio4_10.png",
-    categories: ["Marketing", "Business"],
-  },
-];
-
-export const allPortfolio = [
-  ...portfolioData,
-  ...portfolioData2,
-  ...portfolioData3,
-  ...portfolioData4,
-  ...projects,
-  ...projects2,
-  ...portfolioData5,
-  ...portfolioItems,
-];
+export const allPortfolio = [...portfolioData];

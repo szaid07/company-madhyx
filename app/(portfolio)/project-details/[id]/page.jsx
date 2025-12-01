@@ -24,7 +24,7 @@ export default async function ProjectPageDetails(props) {
   return (
     <>
       <Header1 />
-      <Breadcumb2 />
+      <Breadcumb2 portfolioId={params.id} />
       <ProjectDetails portfolioId={params.id} />
       <MarqueeComponent />
       <Footer1 />

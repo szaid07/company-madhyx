@@ -1,7 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import { allPortfolio } from "@/data/portfolio";
 
-export default function Breadcumb2() {
+export default function Breadcumb2({ portfolioId }) {
+  const portfolioItem =
+    allPortfolio.filter((elm) => elm.id == portfolioId)[0] || allPortfolio[1];
   return (
     <div className="breadcumb-wrapper style2 bg-smoke">
       <div className="container-fluid">
@@ -17,7 +20,7 @@ export default function Breadcumb2() {
                 Porfolio
               </Link>
             </li>
-            <li>Decentralized Platform</li>
+            <li>{portfolioItem.title}</li>
           </ul>
         </div>
       </div>
