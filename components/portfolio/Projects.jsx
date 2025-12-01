@@ -55,12 +55,14 @@ export default function Projects() {
                   <ul className="portfolio-meta">
                     {elm.categoryLinks.map((elm2, i2) => (
                       <li key={i2}>
-                        <a href="#">{elm2}</a>
+                        <span>{elm2}</span>
                       </li>
                     ))}
                   </ul>
                   <h3 className="portfolio-title">
-                    <a href="#">{elm.projectTitle}</a>
+                    <a href={`/project-details/${elm.id}`}>
+                      {elm.projectTitle}
+                    </a>
                   </h3>
                   <Link
                     scroll={false}

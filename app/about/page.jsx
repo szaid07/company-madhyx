@@ -13,7 +13,7 @@ import Header1 from "@/components/headers/Header1";
 import React from "react";
 
 export const metadata = {
-  title: "About || Frisk - Creative Agency & Portfolio Nextjs Template",
+  title: "About || Madhyx Tech",
 };
 
 export default function AboutPage() {
@@ -26,7 +26,7 @@ export default function AboutPage() {
       {/* <Awards /> */}
       {/* <Team /> */}
       <ContactForm />
-      <Clients />
+      {/* <Clients /> */}
       <MarqueeComponent />
       <Footer1 />
     </>

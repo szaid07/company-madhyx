@@ -7,7 +7,7 @@ import Features1 from "@/components/service/Features1";
 
 import Video from "@/components/service/Video";
 export const metadata = {
-  title: "Service 1 || Frisk - Creative Agency & Portfolio Nextjs Template",
+  title: "Services || Madhyx Tech",
 };
 
 export default function ServicePage1() {
@@ -16,7 +16,7 @@ export default function ServicePage1() {
       <Header1 />
       <Breadcumb />
       <Features1 />
-      <Video />
+      {/* <Video /> */}
       <MarqueeComponent />
       <Footer1 />
     </>

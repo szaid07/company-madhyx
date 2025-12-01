@@ -34,7 +34,7 @@ export default function Testimonials() {
         <Image
           width={838}
           height={716}
-          src="/assets/img/testimonial/testi_thumb1_1.jpg"
+          src="/assets/img/testimonial/testimonials.jpg"
           alt="img"
         />
       </div>

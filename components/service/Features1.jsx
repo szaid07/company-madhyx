@@ -1,6 +1,8 @@
-import { featureData4 } from "@/data/features";
+import { allFeatures } from "@/data/features";
+
 import Image from "next/image";
 import Link from "next/link";
+
 import React from "react";
 
 export default function Features1() {
@@ -8,7 +10,7 @@ export default function Features1() {
     <div className="feature-area-1 space">
       <div className="container">
         <div className="row gy-4 align-items-center justify-content-center">
-          {featureData4.map((elm, i) => (
+          {allFeatures.map((elm, i) => (
             <div key={i} className="col-xl-4 col-md-6">
               <div className="feature-card">
                 <div className="feature-card-icon">
@@ -18,7 +20,7 @@ export default function Features1() {
                   <a href="#">{elm.title}</a>
                 </h4>
                 <p className="feature-card-text">{elm.text}</p>
-                <Link
+                {/* <Link
                   scroll={false}
                   href={`/service-details/${elm.id}`}
                   className="link-btn"
@@ -33,7 +35,7 @@ export default function Features1() {
                     src="/assets/img/icon/arrow-left-top.svg"
                     alt="icon"
                   />
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}
