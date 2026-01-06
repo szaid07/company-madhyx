@@ -1,17 +1,25 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
-import "../public/assets/css/vendor.css";
-import "../public/assets/sass/style.scss";
-import { ParallaxProvider } from "react-scroll-parallax";
 import ScrollTop from "@/components/common/ScrollTop";
-import "rc-slider/assets/index.css";
-import { Unbounded, Poppins } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Context from "@/context/Context";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+
+import { usePathname } from "next/navigation";
+
+import { useEffect } from "react";
+
+import { ParallaxProvider } from "react-scroll-parallax";
+
+import "rc-slider/assets/index.css";
+
+import { Unbounded, Poppins } from "next/font/google";
+import "./global.css";
+
+import "../public/assets/css/vendor.css";
+import "../public/assets/sass/style.scss";
 
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap.esm").then((module) => {

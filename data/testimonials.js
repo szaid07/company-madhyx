@@ -2,13 +2,13 @@ export const testimonialData = [
   {
     id: 1,
     text: "Working with Madhyx Technologies was a game-changer. Their approach to UI/UX and development helped us launch a polished fintech product in record time. The team is talented, responsive, and incredibly professional.",
-    name: "Ayesha Khan",
-    designation: "Founder, Ayesha Digital Solutions",
+    name: "Asma Khan",
+    designation: "Founder, Asma Digital Solutions",
   },
   {
     id: 2,
     text: "The Monet Construction website exceeded our expectations. Madhyx delivered exceptional design clarity, smooth functionality, and fast performance. Their attention to detail and communication throughout the project were outstanding.",
-    name: "Rohit Sharma",
+    name: "Rohit Bhillare",
     designation: "Managing Director, Monet Builders Pvt Ltd",
   },
   {

@@ -370,4 +370,40 @@ export const recentPosts = [
   },
 ];
 
-export const allBlogs = [...blogs, ...blogs3, ...blogs2, ...recentPosts];
+export const news = [
+  {
+    id: 16,
+    smallImageUrl: "/assets/img/blog/partnership_mob_1.svg",
+    image: "/assets/img/blog/partnership_mob_1.svg",
+    date: "January 1, 2026",
+    category: "Company News",
+    title: "Madhyx Technologies Partners with Mobadrah",
+    icon: "/assets/img/icon/arrow-left-top.svg",
+    p1: "Madhyx Technologies has entered into a strategic partnership with Mobadrah, taking responsibility for managing and operating its complete IT department.",
+    p2: "This collaboration strengthens Mobadrah’s digital foundation by leveraging Madhyx’s expertise in application development, cloud infrastructure, and enterprise IT services.",
+    p3: "Under this agreement, Madhyx will oversee system maintenance, DevOps, cybersecurity, monitoring, and ongoing technical support.",
+    p4: "The partnership is designed to ensure scalability, security, and operational efficiency while aligning technology initiatives with business goals.",
+    p5: "Together, Madhyx and Mobadrah aim to build a future-ready IT ecosystem that supports long-term growth and innovation.",
+    qoute: "Strong partnerships build stronger technology foundations.",
+    bgd_image_1: "/assets/img/blog/partnership_mob_2.svg",
+    bgd_image_2: "/assets/img/blog/partnership_mob_3.svg",
+    tags: [
+      { id: 1, text: "Partnership" },
+      { id: 2, text: "IT Services" },
+      { id: 3, text: "Digital Transformation" },
+      { id: 4, text: "Enterprise IT" },
+    ],
+    categories: [
+      { id: 1, text: "Company News" },
+      { id: 2, text: "Technology" },
+    ],
+  },
+];
+
+export const allBlogs = [
+  ...news,
+  ...blogs,
+  ...blogs3,
+  ...blogs2,
+  ...recentPosts,
+];

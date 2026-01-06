@@ -7,6 +7,7 @@ import Faq from "@/components/homes/home-1/Faq";
 
 import Hero from "@/components/homes/home-1/Hero";
 import Portfolio from "@/components/homes/home-1/Portfolio";
+import Clients from "@/components/service/Clients";
 import Team from "@/components/homes/common/Team";
 import Testimonials from "@/components/homes/common/Testimonials";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Header1 />
       <Hero />
       <About />
+      <Clients />
 
       <Faq />
       <Portfolio />
