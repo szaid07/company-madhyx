@@ -33,6 +33,17 @@ export default function Hero() {
                     <span className="effect-1">VIEW OUR WORKS</span>
                   </span>
                 </Link>
+
+                <Link
+                  scroll={false}
+                  href="/about"
+                  className="btn style2 wow img-custom-anim-right animated"
+                >
+                  <span className="link-effect">
+                    <span className="effect-1">CONTACT US</span>
+                    <span className="effect-1">CONTACT US</span>
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
@@ -43,7 +54,7 @@ export default function Hero() {
               src="/assets/img/icon/worldwide.svg"
               alt="img"
             />
-            <h6>Agency of this year worldwide</h6>
+            <h6>Innovation You Can Trust</h6>
           </div>
         </div>
       </div>

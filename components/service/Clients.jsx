@@ -11,7 +11,7 @@ import {
 export default function Clients() {
   return (
     <section className="blog-area space-top">
-      <div className="container">
+      <div className="container w-100 mx-0" style={{ maxWidth: "100%" }}>
         <div className="row justify-content-center">
           <div className="col-xxl-7 col-xl-6 col-lg-8">
             <div className="title-area text-center">
